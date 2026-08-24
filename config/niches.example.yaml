@@ -1,0 +1,25 @@
+niches:
+  - id: story_history
+    name: Story origins, folklore & cultural commentary
+    audience: general/adult
+    weight_advertiser_value: 0.15
+  - id: business_stories
+    name: Business, brand and corporate stories
+    audience: general/adult
+    weight_advertiser_value: 0.25
+  - id: psychology
+    name: Psychology and human behavior
+    audience: general/adult
+    weight_advertiser_value: 0.20
+  - id: technology_failures
+    name: Technology failures and engineering stories
+    audience: general/adult
+    weight_advertiser_value: 0.22
+  - id: luxury_economics
+    name: Luxury economics and brand strategy
+    audience: general/adult
+    weight_advertiser_value: 0.28
+  - id: internet_mysteries
+    name: Internet mysteries and digital culture
+    audience: general/adult
+    weight_advertiser_value: 0.15
