@@ -1,0 +1,11 @@
+channels:
+  # Replace these examples with channel IDs you want to monitor.
+  # Channel IDs are preferred over names because names can change.
+  - name: Example Story Channel
+    id: UC_REPLACE_ME_1
+    niche: story_history
+    enabled: false
+  - name: Example Business Channel
+    id: UC_REPLACE_ME_2
+    niche: business_stories
+    enabled: false
