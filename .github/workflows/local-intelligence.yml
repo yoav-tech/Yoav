@@ -1,0 +1,26 @@
+name: Local YouTube Intelligence
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+jobs:
+  intelligence:
+    # Requires you to register your Mac as a self-hosted GitHub Actions runner.
+    runs-on: [self-hosted, macOS]
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run local intelligence pipeline
+        shell: bash
+        run: |
+          if [ ! -d .venv ]; then
+            python3 -m venv .venv
+          fi
+          source .venv/bin/activate
+          pip install -r requirements.txt
+          python -m app.cli pipeline
+      - name: Summary
+        if: always()
+        run: echo "Pipeline completed. Publishing is intentionally not part of this workflow."
